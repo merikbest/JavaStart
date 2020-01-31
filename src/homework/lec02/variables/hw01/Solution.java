@@ -7,10 +7,20 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String number = reader.readLine();
-        char result [] = number.toCharArray();
-        for (char c : result) {
-            System.out.println(c);
+
+        while (true) {
+            String number = reader.readLine();
+
+            if (number.length() != 5) {
+                System.out.println("Введите 5-ти значное число");
+            } else {
+                char result [] = number.toCharArray();
+
+                for (char c : result) {
+                    System.out.println(c);
+                }
+                break;
+            }
         }
     }
 }

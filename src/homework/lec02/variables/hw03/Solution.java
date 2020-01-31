@@ -9,7 +9,7 @@ public class Solution {
         System.out.print("Радиус = ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         double radius = Double.parseDouble(reader.readLine());
-        double perimeter = 2 * 3.14 * radius;
+        double perimeter = 2.0 * Math.PI * radius;
         System.out.println("Длина окружности (периметр круга) с радиусом " + radius + " равна " + perimeter);
     }
 }
