@@ -1,6 +1,7 @@
 package homework.lec03.operators.level2.hw03;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Solution {
@@ -22,7 +23,7 @@ public class Solution {
                 System.out.println("Число " + String.valueOf(chars) +
                         (luckyTicket ? " является " : " не является ") + "счастливым билетом.");
             }
-        } catch (Exception e) {
+        } catch (IOException | NumberFormatException e) {
             System.out.println("Ошибка! Введите число.");
         }
     }

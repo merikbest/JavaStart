@@ -1,6 +1,7 @@
 package homework.lec03.operators.level1.hw03;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Solution {
@@ -14,7 +15,7 @@ public class Solution {
             } else {
                 System.out.println("количество дней в году: " + 365);
             }
-        } catch (Exception e) {
+        } catch (IOException | NumberFormatException e) {
             System.out.println("Ошибка! Вы ввели неправильный год.");
         }
     }

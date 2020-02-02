@@ -17,7 +17,7 @@ public class Solution {
             double h = Math.sqrt((xCoord * xCoord) + (yCoord * yCoord));
 
             System.out.println("Координаты точки X и Y " + (h > r ? "не лежат " : " лежат ") + "внутри круга.");
-        } catch (Exception e) {
+        } catch (IOException | NumberFormatException e) {
             System.out.println("Ошибка! Введите число.");
         }
     }

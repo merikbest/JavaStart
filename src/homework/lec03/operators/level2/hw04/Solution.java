@@ -1,6 +1,7 @@
 package homework.lec03.operators.level2.hw04;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Solution {
@@ -15,7 +16,7 @@ public class Solution {
                 boolean isPalindrome = palindrome.equals(new StringBuilder(palindrome).reverse().toString());
                 System.out.println("Число " + palindrome + (isPalindrome ? " является палиндромом." : " не является палиндромом."));
             }
-        } catch (Exception e) {
+        } catch (IOException | NumberFormatException e) {
             System.out.println("Ошибка! Введите число.");
         }
     }

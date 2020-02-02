@@ -1,7 +1,6 @@
 package homework.lec03.operators.level1.hw01;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Solution {
@@ -19,7 +18,7 @@ public class Solution {
                 if (numArray[i] > maxNum) {
                     maxNum = numArray[i];
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 System.out.println("Ошибка! Введите число.");
                 i--;
             }
