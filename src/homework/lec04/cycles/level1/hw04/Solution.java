@@ -10,7 +10,7 @@ public class Solution {
             System.out.println("Высота прямоугольника : ");
             int height = Integer.parseInt(reader.readLine());
 
-            System.out.println("Шырина прямоугольника : ");
+            System.out.println("Ширина прямоугольника : ");
             int width = Integer.parseInt(reader.readLine());
 
             for (int i = 1; i <= height; i++) {

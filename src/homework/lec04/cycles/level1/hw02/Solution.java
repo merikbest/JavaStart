@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println("Введите чило в диапазоне от 4 до 16: ");
+        System.out.println("Введите число в диапазоне от 4 до 16: ");
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             long number = Integer.parseInt(reader.readLine());
