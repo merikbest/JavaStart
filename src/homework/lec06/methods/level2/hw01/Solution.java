@@ -33,7 +33,7 @@ public class Solution {
             return 0;
         }
     }
-    //1 РЕАЛИЗАЦИЯ
+
     public static int formula1(int[] array) {
         boolean fail = false;
         int number = array[1] - array[0];
@@ -50,7 +50,7 @@ public class Solution {
             return number * (array.length);
         }
     }
-    //2 РЕАЛИЗАЦИЯ
+
     public static int formula2(int[] array) {
         boolean fail = false;
         int number = array[1] - array[0];
@@ -67,7 +67,7 @@ public class Solution {
             return number * (array.length) + 1;
         }
     }
-    //3 РЕАЛИЗАЦИЯ
+
     public static int formula3(int[] array) {
         boolean fail = false;
         int number = array[1];
@@ -84,7 +84,7 @@ public class Solution {
             return (int) Math.pow(number, array.length);
         }
     }
-    //4 РЕАЛИЗАЦИЯ
+
     public static int formula4(int[] array) {
         boolean fail = false;
         int number = 0;

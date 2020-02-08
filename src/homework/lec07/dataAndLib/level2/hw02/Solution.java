@@ -1,20 +1,19 @@
 package homework.lec07.dataAndLib.level2.hw02;
 
 public class Solution {
-    // Driver code
     public static void main(String[] args) {
-        int n1 = 1000, n2 = 14;
-        System.out.println(hammingDistance(n1, n2));
+        int num1 = 1000, num2 = 17;
+        System.out.println(hammingDistance(num1, num2));
     }
 
-    static int hammingDistance(int n1, int n2) {
-        int x = n1 ^ n2;
-        int setBits = 0;
+    static int hammingDistance(int num1, int num2) {
+        int i = num1 ^ num2;
+        int bits = 0;
 
-        while (x > 0) {
-            setBits += x & 1;
-            x >>= 1;
+        while (i > 0) {
+            bits += i & 1;
+            i >>= 1;
         }
-        return setBits;
+        return bits;
     }
 }
