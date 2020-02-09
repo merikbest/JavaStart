@@ -1,16 +1,15 @@
-package homework.lec08.files.practice;
+package homework.lec08.files.level1.hw02;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class Practice2 {
+public class Solution {
     public static void main(String[] args) {
+        File file = new File("matrix.txt");
         int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         String text = fromArrayToString(array);
-        System.out.println(text);
-        File file = new File("matrix.txt");
-        saveTextToFile(text,file);
+        saveTextToFile(text, file);
     }
 
     public static void saveTextToFile(String text, File file) {

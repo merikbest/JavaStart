@@ -40,7 +40,7 @@ public class Practice1 {
     //Удалить каталог произвольной вложености (Рекурсия)
     public static void deleteFolder(File folder) {
         if (folder.isFile()) {
-            System.out.println("Delete " + folder.getName());
+            System.out.println(folder.getName());
             folder.delete();
         } else {
             File[] files = folder.listFiles();
